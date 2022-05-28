@@ -1,0 +1,162 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+  background: linear-gradient(45deg, white, purple);
+  
+}
+
+.sFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+.form {
+  background-color:white;
+  width: 100px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  align-items:center;
+}
+
+.title{
+  font-size: 60px;
+  margin-bottom: 1px;
+  color:white;
+}
+.rBtn {
+  display: block;
+  padding: 15px 30px;
+  border: none;
+  background-color: #3d90e3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.rBtn:hover {
+  background-color:purple;
+  transform: translateY(-2px);
+}
+
+
+.inputContainer {
+  position: relative;
+  height: 40px;
+  width: 95%;
+  margin-bottom: 20px;
+
+}
+.input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 0 20px;
+    background: white;
+  z-index: 1;
+   outline: none;
+
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: none;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 0;
+
+}
+.placeholder {
+  color:black;
+ 
+}
+
+
+.submitBtn {
+  display: block;
+  padding: 15px 30px;
+  border: none;
+  background-color: #3d90e3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submitBtn:hover {
+  background-color:purple;
+  transform: translateY(-2px);
+}
+.input:focus + .label {
+  top: -15px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color:purple;
+}
+
+.sin {
+
+  text-align: center;
+
+}
+
+.input:not(:placeholder - shown)+.label
+{
+top:-7px;
+left:2px;
+z-index:10;
+font-size:8px;
+font-weight:550;
+
+
+
+}	
+
+.sep {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  
+  top:0;
+  left: 0;
+}
+
+input[type=image]{
+	
+			height:220px;
+			width:220px;
+			
+			
+}
+
+.right {
+
+  right: 0;
+}
+
+
